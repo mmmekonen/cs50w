@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: grey;
+  margin: 0 5px;
+  padding: 0 2px;
+}
+
+nav li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.search {
+  border-radius: 26px;
+  padding: 0.5em 1.1em;
+  font-size: 1rem;
+  color: #000000de;
+  width: 100%;
+  height: 50px;
+  border: 1px solid lightgrey;
+  box-shadow: 0 3px 10px #bfbebeab;
+}
+
+.search:focus-visible,
+.search:hover {
+  outline: none;
+  box-shadow: 0 2px 8px 1px #89898996;
+}
+
+input[type="submit"] {
+  font-size: 1rem;
+  text-align: center;
+  color: #505050;
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  margin: 0 3px;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.3rem;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid lightgrey;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.search-bar,
+.search-buttons {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-bar {
+  margin-top: 30vh;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  max-width: 660px;
+}
+/* Advanced Search Page CSS */
+.title {
+  font-size: 1.3rem;
+}
+
+.title,
+.field-label {
+  color: #222222;
+}
+
+.advanced-form {
+  max-width: 800px;
+  margin: 15vh 30px 0;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  margin: 15px 0;
+}
+
+.field-input {
+  height: 2.5em;
+  flex: 1 1 auto;
+}
+
+.field-input:focus,
+.field-input:focus:not(:focus-visible) {
+  outline: none;
+  border: 1px solid #4d90fe;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.field-label {
+  width: 200px;
+  margin: 0;
+}
+
+#advanced-submit {
+  background-color: #3e69ff;
+  color: white;
+  border-color: #1e50ff;
+}
+
+#advanced-submit:hover {
+  border-color: #1e50ff;
+  background-color: #0e41f3;
+  box-shadow: none;
+}
+
+#advanced-submit {
+  float: right;
+  margin: 20px 0;
+}
